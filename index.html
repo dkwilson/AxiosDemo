@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/flatly/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-yrfSO0DBjS56u5M+SjWTyAHujrkiYVtRYh2dtB3yLQtUz3bodOeialO59u5lUCFF"
+      crossorigin="anonymous"
+    />
+
+    <title>Axios Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Axios Demo <small>by random youtube guy</small></h1>
+      <div class="jumbotron">
+        <h3>Welcome to Axios</h3>
+        <h5>
+          This application uses Axios. Axios is a promise-based http client for
+          Javascript.
+        </h5>
+      </div>
+      <div class="card text-white bg-primary mb-3">
+        <div class="card-heading mx-2">GET Request</div>
+        <div class="card-body bg-secondary mx-3">
+            <button class="btn btn-info" onclick="performGetRequest1()">Get Todos</button>
+            <button class="btn btn-warning" onclick="clearOutput()">Clear</button>
+            <div class="card-text" id="getResult1"></div>
+        </div>
+      </div>
+      <div class="card text-white bg-primary mb-3">
+        <div class="card-heading mx-2">GET Request with Parameters</div>
+        <div class="card-body bg-secondary mx-3">
+            <input type="text" class="form-control" id="todoId" placeholder="Todo ID...">
+            <button class="btn btn-info" onclick="performGetRequest2()">Get Todos</button>
+            <button class="btn btn-warning" onclick="clearOutput()">Clear</button>
+            <div class="card-text" id="getResult2"></div>
+        </div>
+      </div>
+      <div class="card text-white bg-primary mb-3">
+        <div class="card-heading mx-2">POST Request</div>
+        <div class="card-body bg-secondary mx-3">
+            <form action="" class="form-group" id="todoInputForm">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="todoTitle" placeholder="Todo Title">
+                </div>
+                <button type="submit" class="btn btn-info">Send</button>
+            </form>
+            <button class="btn btn-warning" onclick="clearOutput()" >Clear</button>
+            <div class="card-body" id="postResult">
+
+            </div>
+        </div>
+      </div>
+     
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
